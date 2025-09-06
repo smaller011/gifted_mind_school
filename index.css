@@ -105,7 +105,6 @@ body{
 @media(max-width:600px){
     body{
         width: 100%;
-        background-size: cover;
     }
     .welcome{
         background: url(./images/students-bg.png);
