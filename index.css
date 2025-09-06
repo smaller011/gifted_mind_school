@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+body{
+    width: 100%;
+}
+.bg-danger{
+    background-color: #e91e63;
+}
+.navbar-nav > li > a:hover{
+    border-bottom: 2px solid white;
+}
+.about:hover{
+    border: none;
+    cursor: pointer;
+}
+.welcome{
+  background: url(./images/students-bg.png);
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 70vh;
+}
+.welcome-content{
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  padding-top: 5rem;
+  padding-left: 5rem;
+  height: 70vh;
+}
+.welcome-content h1{
+    font-size: 5rem;
+}
+.welcome-content p{
+    font-size: 1.5rem;
+}
+.btn{
+    background: #e91e63;
+    color: white;
+}
+.about{
+    display: flex;
+    gap: 1rem;
+}
+.card{
+    height: 400px;
+    width: 350px;
+    margin-left: 1rem;
+}
+.about-content{
+    height: 350px;
+    text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.about-content p{
+    padding-top: 2rem;
+}
+.vision{
+    height: 300px;
+    font-size: large;
+    padding-left: 1rem;
+}
+.vision h4{
+    margin-bottom: 4rem;
+}
+.testimonial-wrapper{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.slider{
+    display: flex;
+    margin-bottom: 2rem;
+    width: 150%;
+    animation: slide 9s alternate infinite;
+}
+ /* @keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    20%{
+        transform: translateX(-10%);
+    }
+    30%{
+        transform: translateX(-25%);
+    }
+     50%{
+        transform: translateX(-35%);
+    } 
+    70%{
+        transform: translateX(-55%);
+    }
+     80%{
+        transform: translateX(-70%);
+    }
+    90%{
+        transform: translateX(-85%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }  
+}  */
+@media(max-width:600px){
+    body{
+        width: 100%;
+    }
+    .welcome{
+        background: url(./images/students-bg.png);
+    }
+    .welcome-content h1{
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+    .about{
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+}

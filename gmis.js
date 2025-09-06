@@ -1,0 +1,1 @@
+alert("Welcome to Gifted Mind International Schools")
