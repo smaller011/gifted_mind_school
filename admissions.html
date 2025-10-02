@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admissions</title>
+  <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+  <link rel="stylesheet" href="./admissions.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-sm bg-danger navbar-light">
+        <div class="container-fluid">
+          <img
+            class="navbar-brand rounded-circle"
+            style="width: 100px"
+            src="./images/gmis-logo.png"
+            alt=""
+          />
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#demo"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="demo">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link text-light" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item ">
+                 <a class="nav-link text-light" href="">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light active" href="./admissions.html">Admissions</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="./academics.html">Academics</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="./gallery.html">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="./contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+  <div class="container my-5 d-flex justify-content-center">
+    <div class="card shadow-lg p-4" style="max-width: 600px; width: 100%;">
+      <h1 class="text-center mb-4">Admission Form</h1>
+
+      <form id="admissionForm" class="needs-validation" novalidate>
+        <!-- Student Info -->
+        <h3>Student Information</h3>
+        <div class="mb-3">
+          <label class="form-label" for="studentName">Full Name</label>
+          <input class="form-control" id="studentName" type="text" required>
+          <div class="invalid-feedback">Please enter the student's full name</div>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" for="dob">Date of Birth</label>
+          <input class="form-control" id="dob" type="date" required>
+          <div class="invalid-feedback">Please enter a valid date of birth</div>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" for="gender">Gender</label>
+          <select class="form-select" id="gender" required>
+            <option value="">Choose Option</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+          </select>
+          <div class="invalid-feedback">Please select a gender</div>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" for="class">Class Applying For</label>
+          <select class="form-select" id="class" required>
+            <option value="">Choose Class</option>
+            <option value="Primary 1">Primary 1</option>
+            <option value="Primary 2">Primary 2</option>
+            <option value="Primary 3">Primary 3</option>
+            <option value="Primary 4">Primary 4</option>
+            <option value="Primary 5">Primary 5</option>
+            <option value="JSS 1">JSS 1</option>
+            <option value="JSS 2">JSS 2</option>
+            <option value="JSS 3">JSS 3</option>
+            <option value="SS 1">SS 1</option>
+            <option value="SS 2">SS 2</option>
+            <option value="SS 3">SS 3</option>
+          </select>
+          <div class="invalid-feedback">Please select a class</div>
+        </div>
+
+        <div class="mb-3">
+          <label for="department" class="form-label">Department (For SS1-SS3)</label>
+          <select id="department" class="form-select">
+            <option value="">Choose Option</option>
+            <option value="Science">Science</option>
+            <option value="Arts">Arts</option>
+            <option value="Commercial">Commercial</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" for="lin">Learner's Identification Number (Optional)</label>
+          <input class="form-control" type="text" id="lin">
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" for="nin">National Identification Number</label>
+          <input class="form-control" id="nin" type="text">
+          <div class="invalid-feedback">NIN must be 11 digits</div>
+        </div>
+
+        <!-- Parent Info -->
+        <h3 class="mt-4">Parent/Guardian Information</h3>
+        <div class="mb-3">
+          <label class="form-label" for="parentName">Full Name</label>
+          <input class="form-control" id="parentName" type="text" required>
+          <div class="invalid-feedback">Please enter the parent's full name</div>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" for="phoneNumber">Phone Number</label>
+          <input class="form-control" id="phoneNumber" type="tel" required>
+          <div class="invalid-feedback">Please enter a valid phone number (10–15 digits)</div>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" for="email">Email Address</label>
+          <input class="form-control" id="email" type="email" required>
+          <div class="invalid-feedback">Please enter a valid email address</div>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" for="address">Home Address</label>
+          <textarea class="form-control" id="address" rows="2" required></textarea>
+          <div class="invalid-feedback">Please enter your home address</div>
+        </div>
+
+        <!-- Previous School -->
+        <h3 class="mt-4">Previous School Information (Optional)</h3>
+        <div class="mb-3">
+          <label class="form-label" for="prevSchool">School Name</label>
+          <input class="form-control" id="prevSchool" type="text">
+        </div>
+        <div class="mb-3">
+          <label class="form-label" for="lastClass">Last Class Attended</label>
+          <input class="form-control" id="lastClass" type="text">
+        </div>
+
+        <!-- Submit -->
+        <div class="text-center">
+          <button class="btn btn-outline-primary btn-lg" type="submit">Submit Application</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="./admissions.js">
+    
+  </script>
+</body>
+</html>

@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,16 +8,92 @@
     <link rel="stylesheet" href="./gallery.css">
 </head>
 <body>
+    <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <div class="container">
-            
-        <div class="row bg-danger ">
-            <div class="bg-danger text-light col-2"><img src="./images/students-bg.png" style="width: 200px; height: 200px;" alt=""></div>
-            <div class="bg-danger text-light shadow col-6"><img src="./images/students-bg.png" style="width: 200px; height: 200px;" alt=""></div>
-            <div class="bg-dark text-light shadow col-4"><img src="./images/students-bg.png" style="width: 200px; height: 200px;" alt=""></div>
-             <div class="card bg-dark text-light shadow col-lg-3"> <img src="./images/students-bg.png" style="width: 200px; height: 200px;" alt="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor magni incidunt reprehenderit eos animi dolore.</div>
-            <div class="card bg-dark text-light shadow"> <img src="./images/students-bg.png" style="width: 200px; height: 200px;" alt="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor magni incidunt reprehenderit eos animi dolore.</div>
-            <div class="card bg-dark text-light shadow"> <img src="./images/students-bg.png" style="width: 200px; height: 200px;" alt="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor magni incidunt reprehenderit eos animi dolore.</div>
-        </div>
+      <a class="navbar-brand" href="index.html">Gifted Mind Int’l School</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="academics.html">Academics</a></li>
+          <li class="nav-item"><a class="nav-link active" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="admissions.html">Admissions</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
     </div>
+  </nav>
+<!-- Gallery Section -->
+<section class="container my-5">
+  <h2 class="text-center mb-4">Our Gallery</h2>
+
+  <div id="galleryCarousel" class="carousel slide shadow-lg rounded" data-bs-ride="carousel" data-bs-interval="3000">
+    
+    <!-- Indicators -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="2"></button>
+      <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="3"></button>
+      <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="4"></button>
+      <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="5"></button>
+      <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="6"></button>
+      <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="7"></button>
+      <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="8"></button>
+      <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="9"></button>
+    </div>
+
+    <!-- Slides -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/Gallery/IMG-20250922-WA0298.jpg" class="d-block w-100 rounded" alt="School Image 1">
+      </div>
+      <div class="carousel-item">
+        <img src="images/Gallery/IMG-20250922-WA0299.jpg" class="d-block w-100 rounded" alt="School Image 2">
+      </div>
+      <div class="carousel-item">
+        <img src="images/Gallery/IMG-20250922-WA0300.jpg" class="d-block w-100 rounded" alt="School Image 3">
+      </div>
+      <div class="carousel-item">
+        <img src="images/Gallery/IMG-20250922-WA0301.jpg" class="d-block w-100 rounded" alt="School Image 4">
+      </div>
+      <div class="carousel-item">
+        <img src="images/Gallery/IMG-20250922-WA0302.jpg" class="d-block w-100 rounded" alt="School Image 5">
+      </div>
+      <div class="carousel-item">
+        <img src="images/Gallery/IMG-20250922-WA0303.jpg" class="d-block w-100 rounded" alt="School Image 6">
+      </div>
+      <div class="carousel-item">
+        <img src="images/Gallery/IMG-20250922-WA0304.jpg" class="d-block w-100 rounded" alt="School Image 7">
+      </div>
+      <div class="carousel-item">
+        <img src="images/Gallery/IMG-20250922-WA0305.jpg" class="d-block w-100 rounded" alt="School Image 8">
+      </div>
+      <div class="carousel-item">
+        <img src="images/Gallery/IMG-20250922-WA0306.jpg" class="d-block w-100 rounded" alt="School Image 9">
+      </div>
+      <div class="carousel-item">
+        <img src="images/Gallery/IMG-20250922-WA0307.jpg" class="d-block w-100 rounded" alt="School Image 10">
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+
+  </div>
+</section>
+
+
+ <script src="./js/bootstrap.min.js"></script>
 </body>
-</html> -->
+</html>

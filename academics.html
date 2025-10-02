@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academics - Gifted Mind Int’l School</title>
+  <link href="CSS/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .academic-card {
+      transition: transform 0.3s;
+    }
+    .academic-card:hover {
+      transform: translateY(-10px);
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Gifted Mind Int’l School</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="academics.html">Academics</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="./admissions.html">Admissions</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="bg-light text-center py-5">
+    <div class="container">
+      <h1 class="fw-bold">Our Academics</h1>
+      <p class="lead">Providing quality education from foundation to advanced levels.</p>
+    </div>
+  </section>
+
+  <!-- Academic Levels -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Nursery -->
+        <div class="col-md-4">
+          <div class="card academic-card shadow-sm h-100">
+            <img src="images/nursery.jpg" class="card-img-top" alt="Nursery">
+            <div class="card-body">
+              <h5 class="card-title">Nursery Section</h5>
+              <p class="card-text">We provide a nurturing environment that builds a strong foundation in literacy, numeracy, and social skills for children aged 2–5 years.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Primary -->
+        <div class="col-md-4">
+          <div class="card academic-card shadow-sm h-100">
+            <img src="images/primary.jpg" class="card-img-top" alt="Primary">
+            <div class="card-body">
+              <h5 class="card-title">Primary Section</h5>
+              <p class="card-text">Our primary curriculum covers Mathematics, English, Science, Social Studies, Arts, and ICT, fostering creativity and critical thinking.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Secondary -->
+        <div class="col-md-4">
+          <div class="card academic-card shadow-sm h-100">
+            <img src="images/secondary.jpg" class="card-img-top" alt="Secondary">
+            <div class="card-body">
+              <h5 class="card-title">Secondary Section</h5>
+              <p class="card-text">Students receive a broad and balanced curriculum preparing them for WAEC/NECO, including Science, Arts, and Commercial subjects.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-light text-center py-3">
+    <p class="mb-0">&copy; 2025 Gifted Mind Int’l School. All Rights Reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
