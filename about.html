@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Gifted Mind International School</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.7;
+      margin: 0;
+      padding: 0;
+      background: #f8f9fa;
+      color: #333;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 50px 20px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.8em;
+      margin-bottom: 15px;
+      color: #2c3e50;
+    }
+
+    .intro {
+      text-align: center;
+      font-size: 1.1em;
+      color: #555;
+      margin-bottom: 50px;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 60px;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    .text {
+      flex: 1 1 500px;
+      font-size: 1.05em;
+      color: #444;
+    }
+
+    .image-placeholder {
+      flex: 1 1 400px;
+      height: 280px;
+      background: #e9ecef;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1em;
+      color: #888;
+      font-style: italic;
+    }
+
+    h2 {
+      color: #2c3e50;
+      margin-bottom: 15px;
+    }
+
+    /* Timeline Section */
+    .timeline {
+      margin-top: 80px;
+      padding: 20px;
+    }
+
+    .timeline h2 {
+      text-align: center;
+      font-size: 2.2em;
+      margin-bottom: 40px;
+      color: #2c3e50;
+    }
+
+    .timeline-item {
+      position: relative;
+      margin-bottom: 40px;
+      padding-left: 40px;
+      border-left: 3px solid #2c3e50;
+    }
+
+    .timeline-item h3 {
+      font-size: 1.3em;
+      margin: 0 0 8px;
+      color: #34495e;
+    }
+
+    .timeline-item p {
+      margin: 0;
+      color: #555;
+    }
+
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -11px;
+      top: 5px;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: #2c3e50;
+    }
+
+    /* Staff Section */
+    .staff {
+      margin-top: 80px;
+    }
+
+    .staff h2 {
+      text-align: center;
+      font-size: 2.2em;
+      margin-bottom: 40px;
+      color: #2c3e50;
+    }
+
+    .staff-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+
+    .staff-member {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 20px;
+      width: 260px;
+      text-align: center;
+      transition: transform 0.2s;
+    }
+
+    .staff-member:hover {
+      transform: translateY(-5px);
+    }
+
+    .staff-photo {
+      width: 100%;
+      height: 260px;
+      background: #e9ecef;
+      border-radius: 12px;
+      margin-bottom: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #888;
+      font-style: italic;
+    }
+
+    .staff-member h3 {
+      margin: 10px 0 5px;
+      font-size: 1.2em;
+      color: #34495e;
+    }
+
+    .staff-member p {
+      margin: 0;
+      font-size: 0.95em;
+      color: #555;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .section {
+        flex-direction: column;
+        text-align: center;
+      }
+      .text {
+        text-align: center;
+      }
+      .timeline-item {
+        padding-left: 20px;
+      }
+      .staff-grid {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>About Gifted Mind International School</h1>
+    <p class="intro">
+      At <strong>Gifted Mind International School</strong>, we are dedicated to nurturing young minds, 
+      inspiring creativity, and building a foundation for lifelong learning. Our school is more than 
+      just an academic institution – it is a place where children discover their potential and 
+      develop into confident global citizens.
+    </p>
+
+    <!-- Section 1 -->
+    <div class="section">
+      <div class="text">
+        <h2>Our Philosophy</h2>
+        <p>
+          We believe that every child is uniquely gifted and deserves a learning environment that 
+          recognizes their strengths, encourages curiosity, and cultivates values such as respect, 
+          integrity, and responsibility. Our approach combines strong academics with character 
+          development, ensuring that students excel both in and out of the classroom.
+        </p>
+      </div>
+      <div class="image-placeholder"><img src="./images/Gallery/IMG-20250922-WA0311.jpg" style="height: 280px; width: 400px;" alt=""></div>
+    </div>
+
+    <!-- Section 2 -->
+    <div class="section">
+      <div class="image-placeholder"><img src="./images/Gallery/IMG-20250922-WA0304.jpg" style="height: 280px; width: 250px;" alt=""></div>
+      <div class="text">
+        <h2>Our Community</h2>
+        <p>
+          Gifted Mind International School is a vibrant community where teachers, parents, and 
+          students work hand in hand to achieve excellence. From cultural celebrations to 
+          sporting events and academic competitions, we foster a spirit of teamwork and unity 
+          that prepares our learners for success in a diverse world.
+        </p>
+      </div>
+    </div>
+
+    <!-- Section 3 -->
+    <div class="section">
+      <div class="text">
+        <h2>Our Vision & Mission</h2>
+        <p>
+          Our vision is to raise a generation of learners who are innovative, compassionate, 
+          and prepared for the challenges of tomorrow. Our mission is to provide quality 
+          education in a safe and supportive environment, while instilling moral values 
+          that shape character and leadership.
+        </p>
+      </div>
+      <div class="image-placeholder">[Insert Sports / Classroom Activity Picture Here]</div>
+    </div>
+
+    <!-- Section 4 -->
+    <div class="section">
+      <div class="image-placeholder">[Insert Students Group Photo Here]</div>
+      <div class="text">
+        <h2>Why Choose Us?</h2>
+        <p>
+          With experienced educators, modern teaching facilities, and a commitment to holistic 
+          development, Gifted Mind International School stands out as a place where learning 
+          goes beyond textbooks. We prepare students not only for academic success but also 
+          for a life filled with purpose and positive impact.
+        </p>
+      </div>
+    </div>
+
+    <!-- Timeline Section -->
+    <div class="timeline">
+      <h2>Our Journey</h2>
+      <div class="timeline-item">
+        <h3>2010 – Founded</h3>
+        <p>Gifted Mind International School opened its doors with a small group of students and a vision to inspire excellence.</p>
+      </div>
+      <div class="timeline-item">
+        <h3>2013 – First Cultural Day</h3>
+        <p>We celebrated our first cultural day, showcasing the rich traditions and diversity of our students.</p>
+      </div>
+      <div class="timeline-item">
+        <h3>2016 – First Graduation Ceremony</h3>
+        <p>A milestone year as our first graduating class completed their studies, ready to face the world.</p>
+      </div>
+      <div class="timeline-item">
+        <h3>2020 – Expansion</h3>
+        <p>The school expanded with new classrooms, modern facilities, and more opportunities for extracurricular growth.</p>
+      </div>
+      <div class="timeline-item">
+        <h3>Today</h3>
+        <p>Gifted Mind International School continues to thrive as a hub of learning, creativity, and excellence.</p>
+      </div>
+    </div>
+
+    <!-- Staff Section -->
+    <div class="staff">
+      <h2>Meet Our Staff</h2>
+      <div class="staff-grid">
+        <div class="staff-member">
+          <div class="staff-photo">[Principal's Photo]</div>
+          <h3>Mr. [Principal’s Name]</h3>
+          <p>Principal – A visionary leader committed to academic excellence and holistic development.</p>
+        </div>
+
+        <div class="staff-member">
+          <div class="staff-photo">[Head Teacher's Photo]</div>
+          <h3>Mrs. [Head Teacher’s Name]</h3>
+          <p>Head Teacher – Dedicated to guiding students and supporting teachers with care and expertise.</p>
+        </div>
+
+        <div class="staff-member">
+          <div class="staff-photo">[Teacher’s Photo]</div>
+          <h3>Ms. [Teacher’s Name]</h3>
+          <p>Class Teacher – Inspiring young learners through creativity, discipline, and compassion.</p>
+        </div>
+
+        <div class="staff-member">
+          <div class="staff-photo">[Teacher’s Photo]</div>
+          <h3>Mr. [Teacher’s Name]</h3>
+          <p>Subject Teacher – Bringing passion for knowledge into every lesson and classroom activity.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
