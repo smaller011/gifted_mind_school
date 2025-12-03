@@ -1,7 +1,120 @@
-body{
-    font-family: 'Times New Roman', Times, serif;
+/* style.css - Professional Admissions Form (Roboto) */
+:root{
+  --brand-red: #dc3545;
+  --card-bg: #ffffff;
+  --muted: #6c757d;
 }
-.studentName{
-    display: flex;
-    flex-direction: column;
+
+* { box-sizing: border-box; }
+html,body{
+  height:100%;
+  font-family: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: linear-gradient(180deg, #f7f8fa 0%, #eef2f4 100%);
+  color: #222;
+  margin:0;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
 }
+
+/* Card */
+.admission-card {
+  background: var(--card-bg);
+  border-radius: 14px;
+  padding: 28px;
+  transition: transform .32s cubic-bezier(.2,.9,.3,1), box-shadow .32s;
+  transform-origin: center;
+  overflow: hidden;
+  border: 1px solid rgba(0,0,0,0.04);
+}
+.admission-card:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 20px 45px rgba(14,17,22,0.08);
+}
+
+/* Titles */
+h1 { font-weight: 600; letter-spacing: -0.4px; }
+.section-title {
+  font-size: 1.05rem;
+  margin-bottom: .6rem;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+/* Inputs focus animation */
+.form-control, .form-select, textarea {
+  border-radius: 8px;
+  padding: .7rem .85rem;
+  border: 1px solid rgba(0,0,0,0.09);
+  transition: box-shadow .18s ease, border-color .18s;
+  background-clip: padding-box;
+}
+.form-control:focus, .form-select:focus, textarea:focus {
+  outline: none;
+  border-color: var(--brand-red);
+  box-shadow: 0 6px 18px rgba(220,53,69,0.08);
+}
+
+/* Buttons */
+.btn-danger {
+  background: var(--brand-red);
+  border-color: var(--brand-red);
+  color: #fff;
+  border-radius: 10px;
+  transition: transform .12s ease, box-shadow .12s;
+}
+.btn-danger:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(220,53,69,0.12);
+}
+
+/* Small responsive tweaks */
+@media (max-width: 576px) {
+  .admission-card { padding: 18px; border-radius: 12px; }
+}
+
+/* Modal overlay */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  display: none; /* toggled by JS */
+  align-items: center;
+  justify-content: center;
+  background: rgba(11,12,14,0.46);
+  z-index: 1100;
+  padding: 20px;
+}
+.modal-overlay.show {
+  display: flex;
+  animation: fadeIn .22s ease both;
+}
+
+/* Modal card */
+.modal-card {
+  width: 100%;
+  max-width: 520px;
+  background: #fff;
+  border-radius: 14px;
+  padding: 24px;
+  text-align: center;
+  transform: scale(.96);
+  opacity: 0;
+  animation: popIn .28s cubic-bezier(.2,.9,.3,1) .0s forwards;
+  box-shadow: 0 22px 60px rgba(10,12,16,0.12);
+}
+.modal-card h2 { color: var(--brand-red); margin-bottom: .5rem; }
+.modal-card p { color: #495057; margin-bottom: 1rem; }
+
+@keyframes popIn {
+  to { transform: scale(1); opacity: 1; }
+}
+@keyframes fadeIn {
+  from { opacity: 0; } to { opacity: 1; }
+}
+
+/* invalid feedback visibility (bootstrap handles adding is-invalid, but ensure smoothness) */
+.is-invalid { border-color: #dc3545 !important; box-shadow: none !important; }
+.invalid-feedback { display: block; }
+
+/* small accessible helper */
+.visually-hidden { position:absolute !important; height:1px; width:1px; overflow:hidden; clip:rect(1px,1px,1px,1px); white-space:nowrap; }
+

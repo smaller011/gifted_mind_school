@@ -1,120 +1,162 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    width: 100%;
+
+body {
+  font-family: Arial, sans-serif;
 }
-.bg-danger{
-    background-color: #e91e63;
+
+/* Navbar */
+.navbar-nav .nav-link {
+  transition: all 0.3s ease;
 }
-.navbar-nav > li > a:hover{
-    border-bottom: 2px solid white;
+.navbar-nav .nav-link:hover {
+  border-bottom: 2px solid white;
 }
-.about:hover{
-    border: none;
-    cursor: pointer;
+
+/* Hero Section */
+.hero {
+  background: url('./images/students-bg.png') no-repeat center center/cover;
+  height: 80vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
-.welcome{
-  background: url(./images/students-bg.png);
-  background-color: rgba(0, 0, 0, 0.5);
-  height: 70vh;
-}
-.welcome-content{
-  color: white;
-  background: rgba(0, 0, 0, 0.5);
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
   width: 100%;
-  padding-top: 5rem;
-  padding-left: 5rem;
-  height: 70vh;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
 }
-.welcome-content h1{
-    font-size: 5rem;
+.hero .container {
+  position: relative;
+  z-index: 1;
+  animation: fadeInUp 1.2s ease-in-out forwards;
 }
-.welcome-content p{
-    font-size: 1.5rem;
+
+/* Buttons */
+.btn-primary {
+  background-color: #e91e63;
+  border: none;
 }
-.btn{
-    background: #e91e63;
+.btn-primary:hover {
+  background-color: #d81b60;
+}
+.btn {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.btn:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+/* Cards */
+.card {
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Proprietor Image Hover */
+.proprietors img {
+  transition: transform 0.4s ease;
+}
+.proprietors img:hover {
+  transform: scale(1.05);
+}
+
+/* Testimonials */
+.testimonials img {
+  object-fit: cover;
+}
+
+/* Scroll Fade-Up Animation */
+.fade-section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.fade-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Fade-in Up Animation */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media(max-width: 992px){
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  .hero p {
+    font-size: 1.2rem;
+  }
+}
+
+@media(max-width: 600px){
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+}
+/* Mobile Menu Overlay */
+.mobile-menu-overlay {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  z-index: 998;
+  transition: opacity 0.3s ease;
+}
+.mobile-menu-overlay.active {
+  display: block;
+}
+
+/* Slide-in Navbar */
+@media(max-width: 991px){
+  #navbarNav {
+    position: fixed;
+    top: 0; right: -250px;
+    height: 100%;
+    width: 250px;
+    background-color: #e91e63;
+    flex-direction: column;
+    padding-top: 60px;
+    transition: right 0.3s ease;
+    z-index: 999;
+  }
+  #navbarNav.show {
+    right: 0;
+  }
+  #navbarNav .nav-link {
     color: white;
-}
-.about{
-    display: flex;
-    gap: 1rem;
-}
-.card{
-    height: 400px;
-    width: 350px;
-    margin-left: 1rem;
-}
-.about-content{
-    height: 350px;
-    text-align: center;
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
-.about-content p{
-    padding-top: 2rem;
-}
-.vision{
-    height: 300px;
-    font-size: large;
-    padding-left: 1rem;
-}
-.vision h4{
-    margin-bottom: 4rem;
-}
-.testimonial-wrapper{
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-}
-.slider{
-    display: flex;
-    margin-bottom: 2rem;
-    width: 150%;
-    animation: slide 9s alternate infinite;
-}
- /* @keyframes slide{
-    0%{
-        transform: translateX(0);
-    }
-    20%{
-        transform: translateX(-10%);
-    }
-    30%{
-        transform: translateX(-25%);
-    }
-     50%{
-        transform: translateX(-35%);
-    } 
-    70%{
-        transform: translateX(-55%);
-    }
-     80%{
-        transform: translateX(-70%);
-    }
-    90%{
-        transform: translateX(-85%);
-    }
-    100%{
-        transform: translateX(-100%);
-    }  
-}  */
-@media(max-width:600px){
-    body{
-        width: 100%;
-    }
-    .welcome{
-        background: url(./images/students-bg.png);
-    }
-    .welcome-content h1{
-        font-size: 3rem;
-        margin-bottom: 1rem;
-    }
-    .about{
-        flex-direction: column;
-        margin-top: 1rem;
-    }
+    font-size: 1.2rem;
+    padding: 1rem;
+  }
+  .navbar-toggler {
+    z-index: 1000;
+  }
 }

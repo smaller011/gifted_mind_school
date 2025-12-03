@@ -188,8 +188,60 @@
       }
     }
   </style>
+  <link rel="stylesheet" href="./CSS/bootstrap.min.css">
 </head>
 <body>
+   <!-- NAVBAR (kept from your original markup, minor class cleanup) -->
+    <nav class="navbar navbar-expand-sm bg-danger navbar-dark">
+      <div class="container-fluid">
+        <a
+          class="navbar-brand d-flex align-items-center gap-2"
+          href="./index.html"
+        >
+          <img
+            class="rounded-circle"
+            style="width: 72px; height: 72px; object-fit: cover"
+            src="./images/gmis-logo.png"
+            alt="School logo"
+          />
+          <span class="fw-bold">GMIS</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#demo"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="demo">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link text-light" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="./about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light active" href="./admissions.html"
+                >Admissions</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="./academics.html"
+                >Academics</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="./gallery.html">Gallery</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link text-light" href="./contact.html">Contact</a>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </nav>
   <div class="container">
     <h1>About Gifted Mind International School</h1>
     <p class="intro">
@@ -238,12 +290,12 @@
           that shape character and leadership.
         </p>
       </div>
-      <div class="image-placeholder">[Insert Sports / Classroom Activity Picture Here]</div>
+      <div class="image-placeholder"><img src="./images/Gallery/IMG-20250922-WA0310.jpg" style="height: 280px; width: 350px;" alt=""></div>
     </div>
 
     <!-- Section 4 -->
     <div class="section">
-      <div class="image-placeholder">[Insert Students Group Photo Here]</div>
+      <div class="image-placeholder"><img src="./images/Gallery/IMG-20250922-WA0308.jpg" style="height: 280px; width: 250px;" alt=""></div>
       <div class="text">
         <h2>Why Choose Us?</h2>
         <p>
@@ -281,19 +333,19 @@
     </div>
 
     <!-- Staff Section -->
-    <div class="staff">
+    <!-- <div class="staff">
       <h2>Meet Our Staff</h2>
       <div class="staff-grid">
         <div class="staff-member">
-          <div class="staff-photo">[Principal's Photo]</div>
-          <h3>Mr. [Principal’s Name]</h3>
+          <div class="staff-photo"><img src="./images/proprietor.jpg" style="height: 260px;" alt=""></div>
+          <h3>Mr. Bankole Kolawole</h3>
           <p>Principal – A visionary leader committed to academic excellence and holistic development.</p>
         </div>
 
         <div class="staff-member">
-          <div class="staff-photo">[Head Teacher's Photo]</div>
-          <h3>Mrs. [Head Teacher’s Name]</h3>
-          <p>Head Teacher – Dedicated to guiding students and supporting teachers with care and expertise.</p>
+          <div class="staff-photo"><img src="./images/proprietress.jpg" style="height: 260px;" alt=""></div>
+          <h3>Mrs. Olaide Kola-Bankole</h3>
+          <p>Head Teacher/ Proprietress – Dedicated to guiding students and supporting teachers with care and expertise.</p>
         </div>
 
         <div class="staff-member">
@@ -308,7 +360,7 @@
           <p>Subject Teacher – Bringing passion for knowledge into every lesson and classroom activity.</p>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 </body>
 </html>
